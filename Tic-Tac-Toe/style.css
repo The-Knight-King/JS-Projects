@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #00BFFF;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 2.8rem;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    margin-top: 20px;
+    height: 60vmin;  /* vmin basically refers to smaller dimension out of width and height. Based on the device viewport it automatically picks up the smaller dimesion, since this is a laptop screen the height < width, so 60vmin - 60% of device's height here. If it was a portrait device, the width < height so vmin will automatically pick the width in that case.*/
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    width: 18.5vmin;
+    height: 18.5vmin;
+    border: none;
+    border-radius: 7%;
+    box-shadow: 0 0 10px rgba(0, 0, 150, 0.5);
+    background-color: aliceblue;
+    color: navy;
+    font-size: 4.5rem;
+}
+
+.reset {
+    border: 3px outset black;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 10px;
+}
