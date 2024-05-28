@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="/Tic-Tac-Toe/style.css">
 </head>
 <body>
-    <main>
+    <div class="msg-container hide">
+        <p id="msg">Congrats! you won :)</p>
+        <button class="new-game">New Game</button>
+    </div>
+    <main class="entire-game">
         <h1>Tic-Tac-Toe</h1>
+        <p class="start">Mark any of the box below to start your turn as player 'X'</p>
         <div class="container">
             <div class="game">
                 <button class="box"></button>
@@ -22,7 +27,7 @@
                 <button class="box"></button>
             </div>
         </div>
-        <button class="reset">Reset Game</button>
+        <button class="reset-game">Reset Game</button>
     </main>
     <script src="/Tic-Tac-Toe/app.js"></script>
 </body>
